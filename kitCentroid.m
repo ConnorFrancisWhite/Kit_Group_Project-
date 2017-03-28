@@ -8,7 +8,7 @@ ndims = 2 + (size(movie,3)==1);
 filters = createFilters(ndims,dataStruct.dataProperties);
 nFrames = length(localMaxima);
 opts = job.options;
-
+%%%%
 % get halfPatchSize to adjust centroid result. The center pixel of a 5x5x5
 % array is (3,3,3), thus, we have to subtract that from centroid coordinates
 halfPatchSize = dataStruct.dataProperties.FILTERPRM(4:6)/2+0.5;
